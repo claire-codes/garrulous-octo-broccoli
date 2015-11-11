@@ -4,6 +4,6 @@ Enter a search term and view the GitHub repos that match your query.
 
 ```
 npm install
-nopm start
+npm start
 ```
 Go to http://localhost:5000/
