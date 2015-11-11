@@ -1,4 +1,14 @@
-h1 {
-  color: orange; }
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+  width: 60%; }
+
+.query {
+  width: 250px;
+  border-radius: 5px;
+  font-size: 18px; }
+
+div {
+  margin-bottom: 3px; }
 
 /*# sourceMappingURL=style.css.map */
