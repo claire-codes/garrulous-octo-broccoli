@@ -1,0 +1,32 @@
+{
+  "name": "githubreposearch",
+  "version": "1.0.0",
+  "description": "GitHub Repo Search App",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "angular": "^1.4.7"
+  },
+  "devDependencies": {
+    "express": "^4.13.3",
+    "grunt": "0.4.2",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1"
+    },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claireparker/garrulous-octo-broccoli.git"
+  },
+  "author": "claireparker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claireparker/garrulous-octo-broccoli/issues"
+  },
+  "homepage": "https://github.com/claireparker/garrulous-octo-broccoli#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  }
+}
