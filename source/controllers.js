@@ -6,7 +6,14 @@ angular.module('GitHubApp.controllers', []).
 
     $scope.toggleDisplay = function(event) {
       var target = angular.element(event.target);
-      target.parent().find('div').css('display', 'block');
+      var content = target.parent().next();
+      if (content.css('display') == 'block') {
+        content.css('display', 'none');
+        target.innerText = 'Show More';
+      } else {
+        content.css('display', 'block');
+        target.innerText = 'Show Less';
+      }
     }
 
     $scope.searchRepos = function() {

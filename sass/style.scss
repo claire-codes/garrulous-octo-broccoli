@@ -4,10 +4,23 @@
   width: 60%;
 }
 .query {
-  width: 250px;
+  width: 300px;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 20px;
+  text-align: center;
 }
 div {
   margin-bottom: 3px;
+}
+.repo-name {
+  width: 49%;
+  float: left;
+  text-align: right;
+}
+.show-more {
+  width: 20%;
+  float: left;
+}
+.clearfix {
+  clear: both;
 }

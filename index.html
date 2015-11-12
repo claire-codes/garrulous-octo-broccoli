@@ -12,23 +12,24 @@
   <div class="wrapper">
     <h2>GitHub Repo Search</h2>
     <div>
-      <input type="text" class="query" ng-model="searchTerm" />
+      <input type="text" class="query" ng-model="searchTerm" autofocus />
     </div>
     <div>
       <button type="button" ng-click="searchRepos()" class="btn btn-primary">Search for Repos</button>
     </div>
     <div ng-show="showResults">There are <strong>{{totalResults}}</strong> repos that match your search query:
-      <ol ng-repeat="repo in results.repos">
-        <li><a ng-href="{{repo.url}}">{{repo.name}}</a>
-        &nbsp;&nbsp;&nbsp;
-        <button type="button" class="btn btn-secondary" ng-click="toggleDisplay($event)">Show More</button>
-        <div style="display: none" class="details">
-          <div>Forks: {{repo.forks}}</div>
-          <div>Issues: {{repo.issues}}</div>
-          <div>Stars: {{repo.stars}}</div>
-          <div>Language: {{repo.language}}</div>
-        </div></li>
-      </ol>
+      <div ng-repeat="repo in results.repos">
+        <div>
+          <div class="repo-name"><a ng-href="{{repo.url}}">{{repo.name}}</a></div>
+          <div class="show-more"><button type="button" class="btn btn-secondary" ng-click="toggleDisplay($event)">Show More</button></div>
+          <div style="display: none" class="details clearfix">
+            <div>Forks: {{repo.forks}}</div>
+            <div>Issues: {{repo.issues}}</div>
+            <div>Stars: {{repo.stars}}</div>
+            <div>Language: {{repo.language}}</div>
+          </div>
+        </div>
+      </div>
     </div>
     <div>{{errorMsg}}</div>
   </div>
